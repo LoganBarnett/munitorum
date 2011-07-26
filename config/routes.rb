@@ -1,4 +1,8 @@
 Munitorum::Application.routes.draw do
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+  devise_scope :user do
+    get '/users/auth/:provider' => 'users/omniauth_callbacks#passthru'
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -12,7 +16,8 @@ Munitorum::Application.routes.draw do
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-
+  resource :main
+  resources :armylists
   # Sample resource route with options:
   #   resources :products do
   #     member do
@@ -50,6 +55,7 @@ Munitorum::Application.routes.draw do
   # just remember to delete public/index.html.
   # root :to => "welcome#index"
 
+  root :to => 'main#show'
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.

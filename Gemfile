@@ -6,7 +6,9 @@ gem 'rails', '3.0.9'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-
+gem "rake", "0.8.7"
+gem "oa-oauth", "0.2.0", :require => "omniauth/oauth"
+gem "devise"
 # Use unicorn as the web server
 # gem 'unicorn'
 
@@ -33,4 +35,5 @@ group :test do
   gem 'rspec-rails'
   gem 'cucumber-rails'
   gem 'capybara'
+  gem 'database_cleaner'
 end

@@ -2,7 +2,7 @@ class CreateWarhammerModels < ActiveRecord::Migration
   def self.up
     create_table :warhammer_models do |t|
       t.string :name
-      t.unit :references
+      t.references :unit
 
       t.timestamps
     end

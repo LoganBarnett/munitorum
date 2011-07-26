@@ -3,7 +3,7 @@ class CreateUnits < ActiveRecord::Migration
     create_table :units do |t|
       t.string :name
       t.string :organization
-      t.armylist :references
+      t.references :armylist
 
       t.timestamps
     end

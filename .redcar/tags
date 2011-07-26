@@ -1,21 +1,35 @@
-1311373742
+1311722725
+AddPointLimitToArmylist	c:/Users/lbarnett/Projects/munitorum/db/migrate/20110726231604_add_point_limit_to_armylist.rb	class AddPointLimitToArmylist 
 Application	c:/Users/lbarnett/Projects/munitorum/config/application.rb	  class Application 
 ApplicationController	c:/Users/lbarnett/Projects/munitorum/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	c:/Users/lbarnett/Projects/munitorum/app/helpers/application_helper.rb	module ApplicationHelper
 Armylist	c:/Users/lbarnett/Projects/munitorum/app/models/armylist.rb	class Armylist 
 ArmylistTest	c:/Users/lbarnett/Projects/munitorum/test/unit/armylist_test.rb	class ArmylistTest 
+ArmylistsController	c:/Users/lbarnett/Projects/munitorum/app/controllers/armylists_controller.rb	class ArmylistsController 
+ArmylistsControllerTest	c:/Users/lbarnett/Projects/munitorum/test/functional/armylists_controller_test.rb	class ArmylistsControllerTest 
+ArmylistsHelper	c:/Users/lbarnett/Projects/munitorum/app/helpers/armylists_helper.rb	module ArmylistsHelper
+ArmylistsHelperTest	c:/Users/lbarnett/Projects/munitorum/test/unit/helpers/armylists_helper_test.rb	class ArmylistsHelperTest 
 BrowsingTest	c:/Users/lbarnett/Projects/munitorum/test/performance/browsing_test.rb	class BrowsingTest 
 CreateArmylists	c:/Users/lbarnett/Projects/munitorum/db/migrate/20110722173906_create_armylists.rb	class CreateArmylists 
 CreateUnits	c:/Users/lbarnett/Projects/munitorum/db/migrate/20110722173324_create_units.rb	class CreateUnits 
 CreateWarhammerModels	c:/Users/lbarnett/Projects/munitorum/db/migrate/20110722173829_create_warhammer_models.rb	class CreateWarhammerModels 
+DeviseCreateUsers	c:/Users/lbarnett/Projects/munitorum/db/migrate/20110726191800_devise_create_users.rb	class DeviseCreateUsers 
 HtmlSelectorsHelpers	c:/Users/lbarnett/Projects/munitorum/features/support/selectors.rb	module HtmlSelectorsHelpers
+MainController	c:/Users/lbarnett/Projects/munitorum/app/controllers/main_controller.rb	class MainController 
+MainControllerTest	c:/Users/lbarnett/Projects/munitorum/test/functional/main_controller_test.rb	class MainControllerTest 
+MainHelper	c:/Users/lbarnett/Projects/munitorum/app/helpers/main_helper.rb	module MainHelper
+MainHelperTest	c:/Users/lbarnett/Projects/munitorum/test/unit/helpers/main_helper_test.rb	class MainHelperTest 
 Munitorum	c:/Users/lbarnett/Projects/munitorum/config/application.rb	module Munitorum
+MunitorumHelpers	c:/Users/lbarnett/Projects/munitorum/features/support/munitorum_helpers.rb	module MunitorumHelpers
 NavigationHelpers	c:/Users/lbarnett/Projects/munitorum/features/support/paths.rb	module NavigationHelpers
+OmniauthCallbacksController	c:/Users/lbarnett/Projects/munitorum/app/controllers/users/omniauth_callbacks_controller.rb	class Users::OmniauthCallbacksController 
 Str	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function Str(key, holder, stack)
 TestCase	c:/Users/lbarnett/Projects/munitorum/test/test_helper.rb	class ActiveSupport::TestCase
 Type	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function Type(o)
 Unit	c:/Users/lbarnett/Projects/munitorum/app/models/unit.rb	class Unit 
 UnitTest	c:/Users/lbarnett/Projects/munitorum/test/unit/unit_test.rb	class UnitTest 
+User	c:/Users/lbarnett/Projects/munitorum/app/models/user.rb	class User 
+UserTest	c:/Users/lbarnett/Projects/munitorum/test/unit/user_test.rb	class UserTest 
 WarhammerModel	c:/Users/lbarnett/Projects/munitorum/app/models/warhammer_model.rb	class WarhammerModel 
 WarhammerModelTest	c:/Users/lbarnett/Projects/munitorum/test/unit/warhammer_model_test.rb	class WarhammerModelTest 
 WithinHelpers	c:/Users/lbarnett/Projects/munitorum/features/step_definitions/web_steps.rb	module WithinHelpers
@@ -58,6 +72,8 @@ dispatch	c:/Users/lbarnett/Projects/munitorum/public/javascripts/effects.js	func
 down	c:/Users/lbarnett/Projects/munitorum/db/migrate/20110722173324_create_units.rb	  def self.down
 down	c:/Users/lbarnett/Projects/munitorum/db/migrate/20110722173829_create_warhammer_models.rb	  def self.down
 down	c:/Users/lbarnett/Projects/munitorum/db/migrate/20110722173906_create_armylists.rb	  def self.down
+down	c:/Users/lbarnett/Projects/munitorum/db/migrate/20110726191800_devise_create_users.rb	  def self.down
+down	c:/Users/lbarnett/Projects/munitorum/db/migrate/20110726231604_add_point_limit_to_armylist.rb	  def self.down
 each	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function each(iterator)
 each	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function each(iterator, context)
 eachSlice	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function eachSlice(number, iterator, context)
@@ -72,11 +88,13 @@ extend	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	func
 extendElementWith	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function extendElementWith(element, methods)
 extendElements	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function extendElements(elements)
 extractScripts	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function extractScripts()
+facebook	c:/Users/lbarnett/Projects/munitorum/app/controllers/users/omniauth_callbacks_controller.rb	  def facebook
 fallback	c:/Users/lbarnett/Projects/munitorum/public/javascripts/controls.js	function fallback(name, expr)
 find	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function find(elements, expression, index)
 findAll	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function findAll(iterator, context)
 findDOMClass	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function findDOMClass(tagName)
 findElement	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function findElement(event, expression)
+find_for_facebook_oauth	c:/Users/lbarnett/Projects/munitorum/app/models/user.rb	  def self.find_for_facebook_oauth(access_token, signed_in_resource=nil)
 fire	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function fire(element, eventName, memo, bubble)
 fireContentLoadedEvent	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function fireContentLoadedEvent()
 first	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function first()
@@ -132,6 +150,7 @@ keys	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	functi
 klass	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function klass()
 last	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function last()
 lastIndexOf	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function lastIndexOf(item, i)
+login	c:/Users/lbarnett/Projects/munitorum/features/support/munitorum_helpers.rb	  def login
 match	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function match()
 match	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function match(element, selector)
 max	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function max(iterator, context)
@@ -140,11 +159,14 @@ merge	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	funct
 merge	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function merge(object)
 methodize	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function methodize()
 min	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function min(iterator, context)
+new	c:/Users/lbarnett/Projects/munitorum/app/controllers/armylists_controller.rb	  def new
+new_with_session	c:/Users/lbarnett/Projects/munitorum/app/models/user.rb	  def self.new_with_session(params, session)
 observe	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function observe(element, eventName, handler)
 on	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function on(element, eventName, selector, callback)
 parseColor	c:/Users/lbarnett/Projects/munitorum/public/javascripts/effects.js	function parseColor(color)
 parseJSON	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function parseJSON()
 partition	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function partition(iterator, context)
+passthru	c:/Users/lbarnett/Projects/munitorum/app/controllers/users/omniauth_callbacks_controller.rb	  def passthru
 path_to	c:/Users/lbarnett/Projects/munitorum/features/support/paths.rb	  def path_to(page_name)
 pluck	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function pluck(property)
 pointer	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function pointer(event)
@@ -163,6 +185,7 @@ select	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	func
 select	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function select(selector, scope)
 selector_for	c:/Users/lbarnett/Projects/munitorum/features/support/selectors.rb	  def selector_for(locator)
 set	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function set(key, value)
+show	c:/Users/lbarnett/Projects/munitorum/app/controllers/main_controller.rb	  def show
 size	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function size()
 size	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function size()
 sortBy	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function sortBy(iterator, context)
@@ -205,6 +228,8 @@ unset	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	funct
 up	c:/Users/lbarnett/Projects/munitorum/db/migrate/20110722173324_create_units.rb	  def self.up
 up	c:/Users/lbarnett/Projects/munitorum/db/migrate/20110722173829_create_warhammer_models.rb	  def self.up
 up	c:/Users/lbarnett/Projects/munitorum/db/migrate/20110722173906_create_armylists.rb	  def self.up
+up	c:/Users/lbarnett/Projects/munitorum/db/migrate/20110726191800_devise_create_users.rb	  def self.up
+up	c:/Users/lbarnett/Projects/munitorum/db/migrate/20110726231604_add_point_limit_to_armylist.rb	  def self.up
 update	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function update(array, args)
 update	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function update(element, content)
 update	c:/Users/lbarnett/Projects/munitorum/public/javascripts/prototype.js	function update(object)
