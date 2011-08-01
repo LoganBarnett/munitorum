@@ -1,0 +1,17 @@
+<script id="armylist-row-template" type="text/html">
+<tr>
+  <td>${armylist.name}</td>
+  <td>${armylist.race}</td>
+  <td>${armylist.point_limit}</td>
+</tr>
+</script>
+
+<%= link_to "Create a new armylist", new_armylist_path %>
+<table id="armylists">
+  <thead>
+    <th>Name</th>
+    <th>Race</th>
+    <th>Points</th>
+  </thead>
+  <tbody id="armylists-body"/>
+</table>

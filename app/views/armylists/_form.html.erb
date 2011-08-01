@@ -4,6 +4,11 @@
 </div>
 
 <div>
+  <%= form.label :race %>
+  <%= form.collection_select :race, Race.all, :name, :name %>
+</div>
+
+<div>
   <%= form.label :point_limit %>
   <%= form.text_field :point_limit %>
 </div>

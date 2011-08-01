@@ -3,6 +3,7 @@ Feature: Armylist management
   I want to create an armylist
   So I can manage my armylist online
   
+  @javascript
   Scenario: Successful Creation
     Given I'm on the armylist creation page
     When I add a new armylist
