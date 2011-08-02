@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(:version => 20110802224136) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "point_limit"
-    t.integer  "user_id"
+    t.integer  "user_id",     :default => 0, :null => false
   end
 
   create_table "races", :force => true do |t|
