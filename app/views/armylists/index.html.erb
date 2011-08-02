@@ -1,8 +1,9 @@
 <script id="armylist-row-template" type="text/html">
-<tr>
+<tr id="armylist-row-${armylist.id}">
   <td>${armylist.name}</td>
   <td>${armylist.race}</td>
   <td>${armylist.point_limit}</td>
+  <td><a class="edit armylist" armylist-id="${armylist.id}" href="#">edit</a></td>
 </tr>
 </script>
 
@@ -13,5 +14,14 @@
     <th>Race</th>
     <th>Points</th>
   </thead>
-  <tbody id="armylists-body"/>
+  <tbody id="armylists-body">
+    <% @armylists.each do |armylist| %>
+    <tr>
+      <td><%= armylist.name %></td>
+      <td><%= armylist.race %></td>
+      <td><%= armylist.point_limit %></td>
+      <td><%= link_to 'edit', edit_armylist_path(armylist) %>
+    </tr>
+    <% end %>
+  </tbody>
 </table>

@@ -1,0 +1,5 @@
+
+<%= form_for @armylist do |form| %>
+  <%= render :partial => 'form', :locals => {:form => form} %>
+  <%= form.submit "Update" %>
+<% end %>

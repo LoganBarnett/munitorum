@@ -1,12 +1,25 @@
 class ArmylistsController < ApplicationController
   def index
+    @armylists = Armylist.all
     respond_to do |format|
       format.html
-      format.json { render :json => Armylist.all}
+      format.json { render :json => @armylists}
     end
   end
   
   def new
+  end
+  
+  def edit
+    @armylist = Armylist.find(params[:id])
+  end
+  
+  def update
+    @armylist = Armylist.find params[:id]
+    
+    if @armylist.update_attributes params[:armylist]
+      redirect_to armylists_path
+    end
   end
   
   def create
