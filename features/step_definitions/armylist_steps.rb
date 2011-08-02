@@ -15,11 +15,11 @@ Then /^I should see the page for my newly created armylist$/ do
 end
 
 Given /^I have a created armylist$/ do
-  @armylist = Armylist.create! :name => 'test army', :point_limit => 500, :race => 'Orks'
+  login
+  @armylist = User.first.armylists.create! :name => 'test army', :point_limit => 500, :race => 'Orks'
 end
 
 Given /^I am on the edit page for my armylist$/ do
-  login
   visit edit_armylist_path(@armylist)
 end
 

@@ -20,7 +20,9 @@
       <td><%= armylist.name %></td>
       <td><%= armylist.race %></td>
       <td><%= armylist.point_limit %></td>
-      <td><%= link_to 'edit', edit_armylist_path(armylist) %>
+      <td>
+        <%= link_to 'edit', edit_armylist_path(armylist) %>
+      </td>
     </tr>
     <% end %>
   </tbody>

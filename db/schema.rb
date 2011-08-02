@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110801203816) do
+ActiveRecord::Schema.define(:version => 20110802224136) do
 
   create_table "armylists", :force => true do |t|
     t.string   "name"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(:version => 20110801203816) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "point_limit"
+    t.integer  "user_id"
   end
 
   create_table "races", :force => true do |t|
