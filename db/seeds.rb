@@ -7,3 +7,5 @@
 #   Mayor.create(:name => 'Daley', :city => cities.first)
 Race.create :name => 'Eldar'
 Race.create :name => 'Orks'
+
+User.create :email => 'logustus@gmail.com', :password => 'Password1', :password_confimation => 'Password1'
