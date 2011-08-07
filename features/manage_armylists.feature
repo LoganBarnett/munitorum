@@ -4,7 +4,7 @@ Feature: Armylist management
   So I can manage my armylist online
   
   Scenario: Successful Creation
-    Given I'm on the armylist creation page
+    Given I am on the armylist creation page
     When I add a new armylist
     Then I should see the page for my newly created armylist
   
@@ -13,6 +13,10 @@ Feature: Armylist management
     And I am on the edit page for my armylist
     When I change the name of the armylist
     And I should see the new name of my armylist
-    
-  #Scenario: Successful Delete
-    
+  
+  @javascript
+  Scenario: Successful Delete
+    Given I have a created armylist
+    And I am on the armylist list page
+    When I delete the armylist
+    Then I should no longer see the armylist

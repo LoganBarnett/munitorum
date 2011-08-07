@@ -7,6 +7,9 @@
 </tr>
 </script>
 
+<% if current_user.nil? %>
+  You need to log in before doing anything with armylists.
+<% else %>
 <%= link_to "Create a new armylist", new_armylist_path %>
 <table id="armylists">
   <thead>
@@ -22,8 +25,10 @@
       <td><%= armylist.point_limit %></td>
       <td>
         <%= link_to 'edit', edit_armylist_path(armylist) %>
+        <%= button_to 'delete', armylist_path(armylist), :confirm => "Are you sure you want to delete #{armylist.name}?", :method => :delete %>
       </td>
     </tr>
     <% end %>
   </tbody>
 </table>
+<% end %>

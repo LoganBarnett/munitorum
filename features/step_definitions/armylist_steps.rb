@@ -1,4 +1,4 @@
-Given /^I'm on the armylist creation page$/ do
+Given /^I am on the armylist creation page$/ do
   login
   visit new_armylist_path
 end
@@ -30,4 +30,18 @@ end
 
 Then /^I should see the new name of my armylist$/ do
   page.should have_xpath('//*', :text => 'test army updated')
+end
+
+Given /^I am on the armylist list page$/ do
+  visit armylists_path
+end
+
+When /^I delete the armylist$/ do
+  click_button 'delete'
+  #click_button 'Ok'
+  page.driver.browser.switch_to.alert.accept
+end
+
+Then /^I should no longer see the armylist$/ do
+  page.should_not have_xpath('//*', :text => 'test army')
 end

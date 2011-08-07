@@ -1,6 +1,6 @@
 class ArmylistsController < ApplicationController
   def index
-    @armylists = current_user.armylists
+    @armylists = current_user ? current_user.armylists : []
     respond_to do |format|
       format.html
       format.json { render :json => @armylists}
@@ -26,7 +26,15 @@ class ArmylistsController < ApplicationController
     if current_user.armylists.create params[:armylist]
       redirect_to armylists_path
     else
-      flash[:error] = 'Could not create the army list'
+      flash[:error] = 'Could not create the armylist'
+    end
+  end
+  
+  def destroy
+    if current_user.armylists.find(params[:id]).delete
+      redirect_to armylists_path
+    else
+      flash[:error] = 'Could not delete the armylist'
     end
   end
 end
