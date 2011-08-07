@@ -7,7 +7,7 @@ gem 'rails', '3.0.9'
 
 gem 'jdbc-sqlite3'
 gem 'activerecord-jdbcsqlite3-adapter'
-gem "rake", "0.8.7"
+gem "rake" #, "0.8.7"
 gem "oa-oauth", "0.2.0", :require => "omniauth/oauth"
 gem "devise"
 gem 'jquery-rails'
