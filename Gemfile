@@ -5,8 +5,9 @@ gem 'rails', '3.0.9'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'jdbc-sqlite3'
-gem 'activerecord-jdbcsqlite3-adapter'
+#gem 'jdbc-sqlite3'
+#gem 'activerecord-jdbcsqlite3-adapter'
+gem 'sqlite3'
 gem "rake" #, "0.8.7"
 gem "oa-oauth", "0.2.0", :require => "omniauth/oauth"
 gem "devise"

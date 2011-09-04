@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110802224136) do
+ActiveRecord::Schema.define(:version => 20110904070105) do
 
   create_table "armylists", :force => true do |t|
     t.string   "name"
@@ -28,9 +28,10 @@ ActiveRecord::Schema.define(:version => 20110802224136) do
   end
 
   create_table "units", :force => true do |t|
-    t.string   "name"
-    t.string   "organization"
     t.integer  "armylist_id"
+    t.string   "name"
+    t.string   "force"
+    t.string   "definition"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

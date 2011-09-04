@@ -10,6 +10,10 @@ class ArmylistsController < ApplicationController
   def new
   end
   
+  def show
+    @armylist = current_user.armylists.find params[:id]
+  end
+  
   def edit
     @armylist = current_user.armylists.find(params[:id])
   end
